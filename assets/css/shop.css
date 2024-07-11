@@ -1,0 +1,17 @@
+.glightbox{
+    overflow: hidden;
+    /* 隱藏超出範圍的內容 */
+    
+    
+}
+.menu-img {
+    width: 100%;
+    height: auto;
+    transition: all 1s ease-out;
+    transform: scale(1);
+
+}
+.menu-img:hover{
+    transform: scale(1.1);
+
+}

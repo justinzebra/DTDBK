@@ -1,0 +1,44 @@
+/* 上面團體照 */
+.img1{
+    position: relative;
+    height: 40vw;
+    width: auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img1 img{
+    margin-top: .5vw;
+    width: 100vw;
+    height: auto;
+    opacity: 100%;
+}
+.leftup{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100vw;
+    height: auto;
+}
+.middle{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100vw;
+    height: auto;
+}
+.rightdown{
+    position: absolute;
+    top: 0%;
+    left: 0; 
+    width: 100vw;
+    height: auto;
+}
+
+#needtofix{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
