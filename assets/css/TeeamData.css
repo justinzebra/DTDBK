@@ -1,0 +1,134 @@
+/* 成績查詢區塊容器樣式 */
+.My_grade {
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 成績查詢內部容器樣式 */
+.My_grade .container {
+    max-width: 1500px; /* 調整容器最大寬度 */
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 標題樣式 */
+.My_grade h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Flexbox 用於選擇賽季部分 */
+.d-flex.align-items-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+/* 下拉選單樣式 */
+#seasonSelect {
+    flex: 1;
+    min-width: 200px;
+    max-width: 350px;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+/* 查詢按鈕樣式 */
+#fetchMatches {
+    flex-shrink: 0;
+    padding: 8px 16px;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+/* 列表樣式 */
+.list-group {
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 0;
+    overflow-x: auto;
+}
+
+/* 列表項目樣式 */
+.list-group-item {
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* 列表選中項目樣式 */
+.list-group-item.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* 表格容器樣式 */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* 允許橫向滾動 */
+    margin-top: 1rem;
+}
+
+/* 表格樣式 */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 1200px; /* 設置表格的最小寬度以避免擠壓 */
+}
+
+.table th, .table td {
+    text-align: center;
+    padding: 8px;
+    white-space: nowrap; /* 防止文字換行 */
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.table td {
+    border: 1px solid #ddd;
+}
+
+/* 小螢幕適配 */
+@media (max-width: 768px) {
+    .d-flex.align-items-center {
+        flex-direction: column;
+        align-items: center;
+    }
+    .table th, .table td {
+        padding: 6px;
+        font-size: 12px;
+    }
+    #fetchMatches {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .table-container {
+        overflow-x: scroll; /* 在小屏幕上允許橫向滾動 */
+    }
+}
+
+/* Match details 置中並調整寬度 */
+#matchDetails {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: auto;
+    margin: 0 auto; /* 置中 */
+    padding: 20px 0; /* 增加上下間距 */
+    text-align: center; /* 文字置中 */
+    box-sizing: border-box; /* 包含 padding 在內 */
+}
